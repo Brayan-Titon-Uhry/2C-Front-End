@@ -1,0 +1,138 @@
+@font-face {
+	font-family: "Lexend";
+	src: url("Lexend-Black.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("Inter-Regular.ttf") format("truetype");
+}
+
+header {
+	background-color: #ff007f;
+	padding: 20px;
+}
+
+#logo {
+	border-radius: 20px;
+	width: 150px;
+	height: 150px;
+	border: 3px solid white;
+}
+
+.titulo-principal {
+	position: absolute;
+	top: 10%;
+	left: 38%;
+	transform: translate(0, -50%);
+	font-size: 100px;
+	font-family: "Lexend";
+	color: black;
+	/* A propriedade text-shadow acrescenta sombras ao texto. Ela aceita uma lista de sombras separadas por vírgula que serão aplicados ao texto e ao text-decorations do elemento.*/
+	text-shadow: -1px 1px 0px #fff, -2px 2px 0px #fff, -3px 3px 0px #fff;
+}
+
+main {
+	width: 40%;
+	margin: 0 30%;
+}
+
+form {
+	margin: 30px 0;
+	/*Margem superior e inferior de 40px, para os lados zero*/
+	display: flex;
+	flex-direction: column;
+}
+
+form label,
+form p {
+	/*Vamos replicar a mesma configuração do form label para o parágrafo, por isso, o uso da vírgula */
+	display: block;
+	font-size: 16px;
+	margin: 0 0 10px;
+	/*10 pixels para baixo*/
+	font-family: "Inter";
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	/*20px para baixo*/
+	padding: 10px 5px;
+	/*10px para cima e para baixo, 25px para os lados*/
+}
+
+.checkbox {
+	margin: 20px, 0;
+	/*20px para cima e para baixo*/
+}
+
+textarea {
+	resize: none;
+	display: block;
+	margin: 0 0 20px;
+	/*20px para baixo*/
+	padding: 10px 5px;
+	/*10px para cima e para baixo, 25px para os lados*/
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background-color: #ff007f;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+	align-self: center;
+}
+
+.enviar:hover {
+	background-color: #ff0000;
+	transform: scale(1.2);
+}
+
+.copyright {
+	color: white;
+	font-size: 13px;
+	margin: 10px 0 0;
+}
+
+footer {
+	text-align: center;
+	background-color: black;
+	/*background-image: url("logotipo.png");*/
+	/*esta propriedade é utilizada para inserir imagens como plano de fundo de um elemento. Para isso, fazemos uso da função url(), para a qual passamos como parâmentro o caminho da imagem a ser inserida*/
+	padding: 10px 0;
+}
+
+#logo1 {
+	border-radius: 15px;
+	width: 100px;
+	height: 100px;
+	border: 3px solid black;
+}
+
+nav {
+	position: absolute;
+	/*posicionamento dos links*/
+	top: 160px;
+	right: 50px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: black;
+	/*font-weight: bold;*/
+	font-size: 22px;
+	text-decoration: none;
+	font-family: "Lexend";
+}
